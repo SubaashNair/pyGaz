@@ -13,8 +13,8 @@ from django.views.decorators.csrf import csrf_exempt
 # Create your views here.
 
 
-@csrf_exempt
-# @csrf_protect
+# @csrf_exempt
+@csrf_protect
 def indexView(request):
     return render(request, 'index.html')
 
